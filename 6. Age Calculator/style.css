@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    padding: 10px;
+    color: white;
+}
+
+.calculator {
+    margin: 10%;
+    width: 100%;
+    max-width: 600px;
+}
+
+.calculator h1 {
+    font-size: 60px;
+}
+
+.calculator h1 span {
+    color: #ffff76;
+}
+
+.input-box {
+    margin: 40px 0px;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.input-box input {
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.input-box button {
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: #ffff76;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+    padding-top: 10px;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100%-10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.result {
+    width: 100%;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px) {
+    .calculator {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .calculator {
+        margin: 20% auto;
+    }
+
+    .calculator h1 {
+        font-size: 40px;
+    }
+
+    .input-box {
+        padding: 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-box input {
+        margin: 0;
+        width: 100%;
+    }
+
+    .input-box button {
+        width: 100%;
+    }
+
+    .result {
+        margin: 0;
+        padding: 10px;
+        font-size: 15px;
+    }
+}

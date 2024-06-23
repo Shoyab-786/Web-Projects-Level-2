@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #94c0ff;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.card h1::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card blockquote {
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.card blockquote::before,
+.card blockquote::after {
+    content: '';
+}
+
+.card span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.card span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btns button {
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.new {
+    background: rgb(23, 124, 229);
+    color: white;
+}
+
+.tweet {
+    background: white;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet img {
+    width: 20px;
+}
+
+.noti {
+    position: relative;
+}
+
+.notification {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.show {
+    opacity: 100%;
+    transition: 0.3s ease-in
+}
+
+@media screen and (max-width:720px) {
+    .card {
+        width: 500px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .card {
+        width: 350px;
+        padding: 20px;
+    }
+
+    .card h1 {
+        font-size: 25px;
+    }
+
+    .card blockquote {
+        font-size: 20px;
+    }
+
+    .notification {
+        top: 30px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .card {
+        width: 260px;
+        padding: 10px;
+    }
+
+    .card h1 {
+        font-size: 25px;
+    }
+
+    .card blockquote {
+        font-size: 20px;
+    }
+}

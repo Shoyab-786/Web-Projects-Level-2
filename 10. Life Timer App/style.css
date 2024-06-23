@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lifespan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.clock {
+    color: white;
+    font-size: 50px;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.heading {
+    font-size: 25px;
+}
+
+.icon i {
+    cursor: pointer;
+}
+
+.dateSec input,
+button {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.dateSec {
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hideDate {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.ptr {
+    cursor: pointer;
+}
+
+.submitbtn {
+    background-color: green;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .heading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .lifespan {
+        font-size: 20px;
+        gap: 25px;
+    }
+
+    .clock {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .lifespan {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .fa-gear {
+        font-size: 2em !important;
+    }
+
+    .dateSec input,
+    button {
+        font-size: 15px;
+    }
+
+    .setting {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .lifespan {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .setting {
+        flex-direction: column-reverse;
+        position: static;
+    }
+}

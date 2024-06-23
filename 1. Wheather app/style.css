@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Protest+Revolution&family=Ubuntu+Mono&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Protest Revolution', sans-serif; */
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+.card {
+    max-width: 400px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.search input,
+button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    height: 40px;
+}
+
+.search input {
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    text-align: center;
+}
+
+.search button {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button img {
+    margin-top: 4px;
+    width: 16px;
+}
+
+.weather-icon {
+    width: 100px;
+    margin: 30px;
+}
+
+.weather h1 {
+    font-size: 60px;
+}
+
+.weather h2 {
+    font-size: 40px;
+}
+
+.details {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.col img {
+    width: 40px;
+    margin: 15px 0px;
+}
+
+.wind,
+.humidity {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:400px) {
+    .card {
+        max-width: 300px;
+        padding: 25px 15px;
+    }
+
+    .weather h1 {
+        font-size: 40px;
+    }
+
+    .weather h2 {
+        font-size: 30px;
+    }
+
+    .col img {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .card {
+        max-width: 225px;
+    }
+
+    .details {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        padding: 10px;
+    }
+
+    .weather-icon {
+        width: 55px;
+        margin: 10px;
+    }
+}

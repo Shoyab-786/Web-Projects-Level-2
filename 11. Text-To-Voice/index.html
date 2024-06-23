@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-To-Voice Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text-To-Voice <span>Converter</span></h1>
+        <div class="card">
+            <textarea id="userInput" cols="30" rows="10" spellcheck="false"
+                placeholder="Write or paste here..."></textarea>
+            <div class="boxBtns">
+                <button class="btn controlBtn"><i class="fa-solid fa-2x fa-circle-play" style="color: #ffffff;"><audio
+                            src="https://storage.googleapis.com/cloudlabs-tts.appspot.com/audio/audio-850768ea5a9cf41b5afe2ddab47b37b6.mp3"></audio></i></button>
+                <button class="btn download"><i class="fa-solid fa-2x fa-circle-down"
+                        style="color: #ffffff;"></i></button>
+            </div>
+            <div class="selectContainer">
+                <div class="custom-select">
+                    <select name="" id="gender">
+                        <option value="2">Male</option>
+                        <option value="1">Female</option>
+                    </select>
+                </div>
+                <div class="custom-select">
+                    <select name="" id="countries">
+                        <option value="IN">India</option>
+                        <option value="AU">Australia</option>
+                        <option value="CA">Canada</option>
+                        <option value="KE">Kenya</option>
+                        <option value="SG">Singapore</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GB">UK</option>
+                    </select>
+                </div>
+                <button class="btn convert"><i class="fa-solid  fa-rotate" style="color: #ffffff;"></i>Convert</button>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="script.js"> </script> -->
+<script src="script2.js"> </script>
+<script src="https://kit.fontawesome.com/14c721d1ff.js" crossorigin="anonymous"></script>
+
+</html>

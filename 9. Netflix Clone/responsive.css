@@ -1,0 +1,296 @@
+@media screen and (max-width: 1500px) {
+
+    .link a {
+        margin: 10px 70px 10px 0px;
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 1245px) {
+    .content> :nth-child(1) {
+        font-size: 35px;
+    }
+
+    .content> :nth-child(2) {
+        font-size: 15px;
+    }
+
+    .sec {
+        padding: 40px 0px;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .sec3 {
+        flex-direction: column-reverse;
+    }
+
+    .vdo img {
+        width: 400px;
+    }
+
+    .vdo video {
+        width: 348px;
+    }
+
+    .sec .content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .sec4 .vdo video {
+        width: 247px;
+        top: 33px;
+        right: 75px;
+    }
+
+    .link a {
+        margin: 10px 50px 10px 0px;
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    .sec1> :nth-child(1) {
+        font-size: 35px;
+    }
+
+    .sec1> :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .sec1> :nth-child(3) {
+        font-size: 15px;
+    }
+
+    .sec6 .content h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 762px) {
+    .link a {
+        display: inline-block;
+        margin: 10px 70px 10px 0px;
+        width: 160px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_Container {
+        min-height: 110vh;
+    }
+
+    .main_Container .box {
+        min-height: 110vh;
+    }
+
+    .sec1> :nth-child(1) {
+        font-size: 30px;
+    }
+
+    .sec1> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .sec1> :nth-child(3) {
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .start {
+        flex-direction: column;
+    }
+
+    .sec1 {
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    .btn-start {
+        padding: 5px;
+    }
+
+    .content> :nth-child(1) {
+        font-size: 1.875rem;
+    }
+
+    .content> :nth-child(2) {
+        font-size: 1.125rem;
+    }
+
+    .sec6 h1 {
+        font-size: larger;
+    }
+
+    .sec6 .content h1 {
+        font-size: 25px;
+    }
+
+    .sec6 ul li {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .link a {
+        margin: 10px 40px 10px 0px;
+        width: 125px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .main_Container {
+        min-height: 64vh;
+    }
+
+    .main_Container .box {
+        min-height: 64vh;
+    }
+
+    .sec6 ul li {
+        font-size: 1rem;
+    }
+
+    .link a {
+        margin: 10px 10px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 402.4px) {
+    .main_Container {
+        min-height: 126vh;
+    }
+
+    .main_Container .box {
+        min-height: 126vh;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login {
+        width: 70px;
+        padding: 8px;
+    }
+
+    input {
+        width: 270px;
+    }
+
+    .vdo img {
+        width: 300px;
+    }
+
+    .vdo video {
+        width: 261px;
+    }
+
+    .content> :nth-child(2) {
+        font-size: 15px;
+    }
+
+    .sec4 .vdo video {
+        width: 127px;
+        top: 16px;
+        right: 35px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .link a {
+        /* margin: 10px 10px 10px 0px; */
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main_Container {
+        min-height: 125vh;
+    }
+
+    .main_Container .box {
+        min-height: 125vh;
+    }
+
+    .sec1> :nth-child(1) {
+        font-size: 25px;
+    }
+
+    .sec1> :nth-child(2) {
+        font-size: 15px;
+    }
+
+    .sec1> :nth-child(3) {
+        font-size: 13px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 12px;
+        width: 190px;
+    }
+
+
+    .btn-start {
+        font-size: 20px;
+        width: 150px;
+    }
+
+    .vdo img {
+        width: 200px;
+    }
+
+    .vdo video {
+        width: 174px;
+    }
+
+    .content> :nth-child(1) {
+        font-size: 25px;
+    }
+
+    .content> :nth-child(2) {
+        font-size: 13px;
+    }
+
+    .link a {
+        width: 70px;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 230px) {
+
+    .login {
+        font-size: 12px;
+    }
+
+    select {
+        padding: 6px;
+    }
+
+    .sec1> :nth-child(1) {
+        font-size: 20px;
+    }
+
+    input {
+        width: 150px;
+    }
+}

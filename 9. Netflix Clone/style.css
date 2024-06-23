@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main_Container {
+    background-image: url(Assests/images/1_bg.jpg);
+    min-height: 109vh;
+    position: relative;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+}
+
+.main_Container .box {
+    background-color: black;
+    min-height: 109vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+}
+
+#navbar {
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 28px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    width: 140px;
+}
+
+section {
+    color: white;
+}
+
+
+.btn-n {
+    background-color: rgb(212, 0, 0);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-n:hover {
+    background-color: rgba(212, 0, 0, 0.9);
+}
+
+.login {
+    font-size: 15px;
+    width: 82px;
+    padding: 7px;
+}
+
+select {
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    text-align: center;
+    padding: 7px;
+}
+
+option {
+    background-color: white;
+    color: black;
+}
+
+.language {
+    width: 140px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.navRight {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.sec1 {
+    margin-top: 50px;
+    width: 100%;
+    height: 76vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.sec1> :nth-child(1) {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.sec1> :nth-child(2) {
+    font-size: 25px;
+}
+
+.sec1> :nth-child(3) {
+    font-size: 20px;
+}
+
+input {
+    border-radius: 4px;
+    border: 1.5px solid #6e6e6e;
+    padding: 15px;
+    font-size: 18px;
+    width: 360px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+input::placeholder {
+    color: #a9a599;
+
+}
+
+.btn {
+    border: none;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-start {
+    font-size: 30px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-start img {
+    width: 15px;
+}
+
+.separate {
+    height: 7px;
+    background-color: #232323;
+}
+
+.sec {
+    width: 80vw;
+    min-height: 85vh;
+    margin: auto;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.content> :nth-child(1) {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.content> :nth-child(2) {
+
+    font-size: 30px;
+}
+
+.vdo {
+    position: relative;
+}
+
+.vdo img {
+    overflow: hidden;
+    width: 552px;
+    position: relative;
+    z-index: 10;
+}
+
+.vdo video {
+    position: absolute;
+    top: 33px;
+    right: 0px;
+}
+
+.sec4 .vdo video {
+    position: absolute;
+    width: 350px;
+    top: 46px;
+    right: 109px;
+}
+
+.sec5 {
+    width: 75vw;
+}
+
+.sec5 .content p {
+    font-size: 25px;
+}
+
+.sec6 {
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec6 h1 {
+    text-align: center;
+    margin: auto;
+}
+
+.sec6 ul li {
+    list-style: none;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.question,
+.answer {
+    background: #2d2d2d;
+}
+
+.question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0px;
+    padding: 15px 30px;
+}
+
+.answer {
+    transition: 0.5s ease-out;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.ans {
+    margin: 30px;
+}
+
+.active {
+    transition: 0.5s ease-out;
+    max-height: 300px;
+}
+
+.accordian {
+    margin: 10px 0px;
+}
+
+
+.collapseContent {
+    background: #2d2d2d;
+}
+
+.sec6 span {
+    /* width: 100%; */
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 50px auto 20px auto;
+}
+
+.sec6 .start {
+    margin-bottom: 80px;
+}
+
+.linkContainer {
+    width: 80vw;
+    margin: 80px auto;
+}
+
+.linkContainer ul li {
+    list-style: none;
+}
+
+.links {
+    margin: 20px 0px;
+}
+
+.white,
+.white a {
+    list-style: none;
+    color: #a9a599;
+}
+
+.link a {
+    display: inline-block;
+    margin: 10px 100px 10px 0px;
+    width: 200px;
+}
+
+.companyName {
+    margin-top: 20px;
+}
