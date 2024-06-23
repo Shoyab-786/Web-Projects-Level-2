@@ -1,4 +1,4 @@
-const url = "http://api.quotable.io/random?maxLength=100";
+const url = "https://api.quotable.io/random?maxLength=100";
 
 // Selecting necessary elements
 let quoteBox = document.querySelector('.quotes'); // Element to display the quote
